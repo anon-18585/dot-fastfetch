@@ -2,4 +2,6 @@
 fastfetch dotfiles
 
 > [!NOTE]
-> - 1 - fastfetch config file
+> - 1 - yanked fastfetch config file
+> - + 
+> - 2 - .png logo
