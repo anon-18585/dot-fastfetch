@@ -1,7 +1,3 @@
-# fastfetch-dot
-fastfetch dotfiles
+# fastfetch
 
-> [!NOTE]
-> - 1 - yanked fastfetch config file
-> - + 
-> - 2 - .png logo
+  fastfetch dotfiles install
