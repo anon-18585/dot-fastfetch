@@ -4,24 +4,26 @@ set -euo pipefail
 
 files=(
     config.jsonc
-    logo
+    logo/
     logo/warp.png
     themes/
     themes/monochrome.jsonc
 )
 
 #ask a question
+echo
 echo "The Following files will be synchronized to ~/.config/fastfetch/. [y/n] "
 printf ' - %s\n' "${files[@]}"
 echo
 
-read -r -p "Continue ? [y/n] " answer
+read -r -p "Continue the setup ? [y/n] " answer
 
 case "$answer" in
     [Yy]|[Yy][Ee][Ss])
       ;;
     [Nn]|[Nn][Oo])
-        echo "."
+        echo
+        echo "Synchronization cancelled."
         exit 0
         ;;
    *)
@@ -30,4 +32,4 @@ case "$answer" in
        ;;
 esac
 
-rsync -arvhP --delete --dry-run ~/dot-fastfetch/fastfetch/ ~/config/fastfetch/
+rsync -arvhP --delete  ~/dot-fastfetch/fastfetch/ ~/.config/fastfetch/
