@@ -2,12 +2,18 @@
 
 set -euo pipefail
 
-
-#DRY-RUN    of the sync and
-rsync -avh --exclude='*.sh' --exclude='*.md --delete --remove-source-files --progress ~/dot-fastfetch/ ~/config/
+files=(
+    config.jsonc
+    logo
+    logo/warp.png
+    themes/
+    themes/monochrome.jsonc
+)
 
 #ask a question
-read -r -p "Continue with the config file initialization ? [y/n] " answer
+read -r -p "The Following files will be synchronized to ~/.config/fastfetch/. Do you want to continue ? [y/n] " answer
+printf ' - %s\n' "${files[@]}"
+echo
 
 case "$answer" in
     [Yy]|[Yy][Ee][Ss])
@@ -21,3 +27,5 @@ case "$answer" in
        exit 1
        ;;
 esac
+
+rsync -arvhP --delete --dry-run ~/dot-fastfetch/fastfetch/ ~/config/fastfetch/
