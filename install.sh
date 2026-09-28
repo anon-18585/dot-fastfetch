@@ -16,7 +16,7 @@ echo "The Following files will be synchronized to ~/.config/fastfetch/. [y/n] "
 printf ' - %s\n' "${files[@]}"
 echo
 
-read -r -p "Continue the setup ? [y/n] " answer
+read -r -p "Continue with the setup ? [y/n] " answer
 
 case "$answer" in
     [Yy]|[Yy][Ee][Ss])
@@ -33,3 +33,8 @@ case "$answer" in
 esac
 
 rsync -arvhP --delete  ~/dot-fastfetch/fastfetch/ ~/.config/fastfetch/
+
+echo
+
+echo "Setup Finished."
+echo
