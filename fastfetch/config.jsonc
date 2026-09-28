@@ -7,150 +7,150 @@
     "width": 30,
     "padding": {
       "top": 5,
-      "left": 3
+      "left": 3,
     },
     "color": {
       "1": "#63ffff",
-      "2": "#63c6c6"
-    }
+      "2": "#63c6c6",
+    },
   },
   "modules": [
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
+      "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐",
     },
     {
       "type": "host",
       "key": "󰌢  PC",
-      "keyColor": "green"
+      "keyColor": "bright_light_white",
     },
     {
       "type": "cpu",
       "key": "│ ├󰻠 ",
-      "keyColor": "green"
+      "keyColor": "bright_light_white",
     },
     {
       "type": "gpu",
       "key": "│ ├󰍹 ",
-      "keyColor": "green"
+      "keyColor": "bright_light_white",
     },
     {
       "type": "memory",
       "key": "│ ├󰑭 ",
-      "keyColor": "green"
+      "keyColor": "bright_light_white",
     },
     {
       "type": "disk",
       "key": "└ └󰋊 ",
-      "keyColor": "green"
+      "keyColor": "bright_light_white",
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘",
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
+      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐",
     },
     {
       "type": "os",
       "key": "  OS",
-      "keyColor": "yellow"
+      "keyColor": "light_white",
     },
     {
       "type": "kernel",
       "key": "│ ├󰌽 ",
-      "keyColor": "yellow"
+      "keyColor": "light_white",
     },
     {
       "type": "bios",
       "key": "│ ├󰖡 ",
-      "keyColor": "yellow"
+      "keyColor": "light_white",
     },
     {
       "type": "packages",
       "key": "│ ├󰏗 ",
-      "keyColor": "yellow"
+      "keyColor": "light_white",
     },
     {
       "type": "shell",
       "key": "└ └󰞷 ",
-      "keyColor": "yellow"
+      "keyColor": "light_white",
     },
     "break",
     {
       "type": "de",
       "key": "󰧨  DE",
-      "keyColor": "blue"
+      "keyColor": "white",
     },
     {
       "type": "lm",
       "key": "│ ├󰍁 ",
-      "keyColor": "blue"
+      "keyColor": "white",
     },
     {
       "type": "wm",
       "key": "│ ├󱂬 ",
-      "keyColor": "blue"
+      "keyColor": "white",
     },
     {
       "type": "wmtheme",
       "key": "│ ├󰉦 ",
-      "keyColor": "blue"
+      "keyColor": "white",
     },
     {
       "type": "terminal",
       "key": "└ └󰆍 ",
-      "keyColor": "blue"
+      "keyColor": "white",
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘",
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m┌────────────────────Uptime / Age / DT────────────────────┐"
+      "format": "\u001b[90m┌────────────────────Uptime / Age / DT────────────────────┐",
     },
     {
       "type": "command",
       "key": "  ›  OS Age  ",
-      "keyColor": "magenta",
-      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+      "keyColor": "dim_white",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
     },
     {
       "type": "uptime",
       "key": "  ›  Uptime  ",
-      "keyColor": "magenta"
+      "keyColor": "dim_white",
     },
     {
       "type": "datetime",
       "key": "  ›  DateTime  ",
-      "keyColor": "magenta"
+      "keyColor": "dim_white",
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
+      "format": "\u001b[90m└─────────────────────────────────────────────────────────┘",
     },
     {
       "type": "colors",
       "paddingLeft": 2,
-      "symbol": "circle"
-    }
+      "symbol": "circle",
+    },
   ],
   "display": {
     "color": {
       "keys": "#ffffff",
-      "title": "#c6c6c6"
+      "title": "#c6c6c6",
     },
     "percent": {
       "color": {
         "green": "#e2e2e2",
         "yellow": "#474747",
-        "red": "#ffb4ab"
-      }
-    }
-  }
+        "red": "#ffb4ab",
+      },
+    },
+  },
 }
