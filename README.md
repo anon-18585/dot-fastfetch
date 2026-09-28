@@ -1,3 +1,3 @@
-# fastfetch
+# dot-fastfetch
 
   fastfetch dotfiles install
