@@ -11,9 +11,11 @@ files=(
 )
 
 #ask a question
-read -r -p "The Following files will be synchronized to ~/.config/fastfetch/. Do you want to continue ? [y/n] " answer
+echo "The Following files will be synchronized to ~/.config/fastfetch/. [y/n] "
 printf ' - %s\n' "${files[@]}"
 echo
+
+read -r -p "Continue ? [y/n] " answer
 
 case "$answer" in
     [Yy]|[Yy][Ee][Ss])
