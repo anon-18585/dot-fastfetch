@@ -34,6 +34,8 @@ esac
 
 rsync -arvhP --delete  ~/dot-fastfetch/fastfetch/ ~/.config/fastfetch/
 
+rmdir --ignore-fail-on-non-empty ~/dot-fastfetch
+
 echo
 
 echo "Setup Finished."
